@@ -1,0 +1,33 @@
+checks: '-*, clang-analyzer-core.*, clang-analyzer-cplusplus.*, modernize-redundant-void-arg, modernize-use-bool-literals, modernize-use-equals-default, modernize-use-nullptr, modernize-use-override, google-explicit-constructor, google-readability-casting, readability-braces-around-statements, readability-identifier-naming.classcase:camelcase, readability-identifier-naming.structcase:camelcase, readability-identifier-naming.typedefcase:camelcase, readability-identifier-naming.enumcase:camelcase, readability-non-const-parameter, cert-dcl21-cpp, bugprone-undelegated-constructor, bugprone-macro-parentheses, bugprone-macro-repeated-side-effects, bugprone-forward-declaration-namespace, bugprone-bool-pointer-implicit-conversion, bugprone-misplaced-widening-cast, cppcoreguidelines-narrowing-conversions, cppcoreguidelines-pro-type-reinterpret-cast, Misc-unconventional-assign-operator'
+warnings-as-errors: 'bugprone-*', 'cert-*'
+header-filter-regex: ''
+check-options:
+  # 现代化（modernize）
+  - key: modernize-redundant-void-arg
+    value: 'true' 
+  - key: modernize-use-bool-literals
+    value: 'true' 
+  - key: modernize-use-equals-default
+    value: 'true' 
+  - key: modernize-use-nullptr
+    value: 'true' 
+  - key: modernize-use-override
+    value: 'true' 
+  # google 代码风格（google）
+  - key: google-explicit-constructor
+    value: 'true' 
+  - key: google-readability-casting
+    value: 'true' 
+  # 可读性（readability）
+  - key: readability-braces-around-statements
+    value: 'true' 
+  - key: readability-identifier-naming.classcase
+    value: 'camelcase' 
+  - key: readability-identifier-naming.structcase
+    value: 'camelcase' 
+  - key: readability-identifier-naming.typedefcase
+    value: 'camelcase' 
+  - key: readability-identifier-naming.enumcase
+    value: 'camelcase' 
+  - key: readability-non-const-parameter
+    value: 'true' 
